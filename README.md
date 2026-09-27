@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![SEBI Registered Research Analyst](https://img.shields.io/badge/SEBI%20Registration-Research%20Analyst-0284C7.svg)](https://www.sebi.gov.in/)
 [![Author Profile](https://img.shields.io/badge/GitHub%20Profile-prince--chauhan--pc-193B56.svg)](https://github.com/prince-chauhan-pc)
-[![Curriculum Vitae](https://img.shields.io/badge/Curriculum%20Vitae-Executive%20Profile%20(PDF)-0A2540.svg)](https://github.com/prince-chauhan-pc/quant-research-portfolio/blob/main/docs/PC_CV/Prince%20Chauhan%20Quants%20Researcher%20CV%20-%20ATS%20Format.pdf)
+[![Curriculum Vitae](https://img.shields.io/badge/Curriculum%20Vitae-Executive%20Profile%20(PDF)-0A2540.svg)](https://github.com/prince-chauhan-pc/quant-research-portfolio/blob/main/docs/PC_CV/Prince%20Chauhan%20Quants%20Researcher.pdf)
 
 > **PROPRIETARY INTELLECTUAL PROPERTY & COMPLIANCE NOTICE**:
 > *This repository contains sanitized reference research architectures, mathematical derivations, and risk validation kernels for institutional review. Proprietary alpha signals, live automated order execution loops, high-frequency co-location telemetry (DhanHQ), and real-money book parameters operate exclusively within an air-gapped, institutional private environment.*
@@ -18,12 +18,12 @@
 
 ## Author & Desk Mandate
 
-Developed and maintained by **Prince Chauhan** — Senior Quantitative Analyst and Systematic Derivatives Strategist with **9+ years of institutional track record** designing, backtesting, and deploying systematic options volatility, statistical arbitrage, and microstructure-aware execution architectures across Indian (NSE/BSE) index and single-stock derivatives.
+Developed and maintained by **Prince Chauhan** — Senior Quantitative Analyst & Researcher with **9+ years of institutional track record** designing, backtesting, and deploying systematic options volatility, statistical arbitrage, and microstructure-aware execution architectures across Indian (NSE/BSE) index and US (CBOE SPX/VIX) derivatives.
 
 - **Author Profile**: [github.com/prince-chauhan-pc](https://github.com/prince-chauhan-pc)
 - **Regulatory Standing**: SEBI Registered Research Analyst • NISM Series-XV Certified (Research Analyst).
-- **Academic Foundation**: Bachelor of Commerce (Honours), Kirori Mal College, University of Delhi (1st Division) • CA Final G1 (ICAI, 78% Marks).
-- **Core Competencies**: SVI & Spline Volatility Surface Calibration, Dealer Gamma Exposure (GEX), Causal Point-in-Time Backtesting, Cross-Asset Cointegration, Microstructure Execution Modeling, and Low-Latency Asynchronous Infrastructure.
+- **Academic Foundation**: Bachelor of Commerce (Honours), Kirori Mal College, University of Delhi (1st Division, 71% Marks) • CA Final Group 1 (ICAI, 78% Marks).
+- **Core Competencies**: Arbitrage-Free SVI Volatility Surface Calibration, Dealer Gamma Exposure (GEX), Causal Point-in-Time Backtesting, Cross-Asset Cointegration, Limit Order Book (LOB) Execution Modeling, and Low-Latency Asynchronous Infrastructure.
 - **Location**: New Delhi, India • Contact: `pchauhanrajput.pc@gmail.com`
 
 ---
@@ -59,7 +59,7 @@ graph TD
 
     C --> D["Institutional Risk Gate<br/>11-Stage Invariant Audit (Rules L1-L22)"]
     D --> D1["Lookahead Clamping (t <= T-1)"]
-    D --> D2["2x Turnover Friction Stress"]
+    D --> D2["0.50% Turnover Friction Stress"]
     D --> D3["Monte Carlo Drawdown Cones (1,000 Paths)"]
 
     D1 & D2 & D3 --> E["Microstructure Execution Simulator<br/>Passive Queue Priority & Sqrt Market Impact"]
@@ -112,8 +112,8 @@ All research published across this desk strictly adheres to institutional risk s
 
 ## Quantitative Modeling & Engineering Stack
 
-- **Quantitative Research**: Python 3.11+, Polars, DuckDB, NumPy, SciPy, Statsmodels, Scikit-Learn.
-- **Financial Engineering**: Black-Scholes-Merton, SVI (Stochastic Volatility Inspired), Spline Smoothing, Greeks Sensitivity (Delta, Gamma, Vega, Theta, Rho), Dealer GEX, Cointegration (Johansen/ADF), Ornstein-Uhlenbeck Process.
+- **Quantitative Research**: Python 3.11+ (Polars, DuckDB, NumPy, SciPy, Statsmodels, Scikit-Learn, Asyncio), SQL (DuckDB, PostgreSQL), Apache Parquet.
+- **Financial Engineering**: Black-Scholes-Merton Inversion, SVI (Stochastic Volatility Inspired), Spline Smoothing, Greeks Sensitivity (Delta, Gamma, Vega, Theta, Rho), Dealer GEX, Cointegration (Johansen/ADF), Ornstein-Uhlenbeck Process.
 - **Risk Governance & Attribution**: Parametric/Historical VaR, Conditional VaR (Expected Shortfall), Monte Carlo Stress Testing (1,000 paths), Bailey & Lopez de Prado Deflated Sharpe Ratio (DSR), Full-Sample RMS Sortino, Duration-Scaled Calmar, Maximum Drawdown Cones.
 - **Systems Architecture**: Python Asyncio, Memory-Mapped IPC (`mmap`), High-Throughput WebSockets, SQLite, Flask, ReportLab PDF Engine.
 - **Testing & Quality Assurance**: PyTest, Python Unittest, Pre-flight AST Syntax Checking, Regression Smoke Gates (112 atomic assertions).
@@ -122,7 +122,7 @@ All research published across this desk strictly adheres to institutional risk s
 
 ## Executive Verification & Contact
 
-- **Curriculum Vitae (PDF)**: [`Prince Chauhan Quantitative Researcher CV.pdf`](https://github.com/prince-chauhan-pc/quant-research-portfolio/blob/main/docs/PC_CV/Prince%20Chauhan%20Quants%20Researcher%20CV%20-%20ATS%20Format.pdf)
+- **Curriculum Vitae (PDF)**: [`Prince Chauhan Quants Researcher.pdf`](https://github.com/prince-chauhan-pc/quant-research-portfolio/blob/main/docs/PC_CV/Prince%20Chauhan%20Quants%20Researcher.pdf)
 - **Direct Communications**: [pchauhanrajput.pc@gmail.com](mailto:pchauhanrajput.pc@gmail.com) • [LinkedIn Network](https://www.linkedin.com/in/prince-chauhan-quant/)
 - **Quantitative Research Portfolio**: [github.com/prince-chauhan-pc/quant-research-portfolio](https://github.com/prince-chauhan-pc/quant-research-portfolio)
 
