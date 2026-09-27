@@ -18,12 +18,12 @@
 
 ## Author & Desk Mandate
 
-Developed and maintained by **Prince Chauhan** — Senior Quantitative Analyst & Researcher with **9+ years of institutional track record** designing, backtesting, and deploying systematic options volatility, statistical arbitrage, and microstructure-aware execution architectures across Indian (NSE/BSE) index and US (CBOE SPX/VIX) derivatives.
+Developed and maintained by **Prince Chauhan** — Senior Quantitative Analyst & Researcher with **9+ years of institutional track record** designing, backtesting, and deploying systematic options volatility, statistical arbitrage, and microstructure-aware execution architectures across Indian (NSE/BSE) index and US (CBOE SPX/VIX) derivatives. Combines deep financial domain mastery with AI-augmented quantitative engineering to design, prototype, and rigorously audit production alpha and execution systems.
 
 - **Author Profile**: [github.com/prince-chauhan-pc](https://github.com/prince-chauhan-pc)
 - **Regulatory Standing**: SEBI Registered Research Analyst • NISM Series-XV Certified (Research Analyst).
 - **Academic Foundation**: Bachelor of Commerce (Honours), Kirori Mal College, University of Delhi (1st Division, 71% Marks) • CA Final Group 1 (ICAI, 78% Marks).
-- **Core Competencies**: Arbitrage-Free SVI Volatility Surface Calibration, Dealer Gamma Exposure (GEX), Causal Point-in-Time Backtesting, Cross-Asset Cointegration, Limit Order Book (LOB) Execution Modeling, and Low-Latency Asynchronous Infrastructure.
+- **Core Competencies**: Arbitrage-Free SVI Volatility Surface Calibration, Dealer Gamma Exposure (GEX), Causal Point-in-Time Backtesting, Cross-Asset Cointegration, Limit Order Book (LOB) Execution Modeling, and AI-Augmented Pipeline Construction.
 - **Location**: New Delhi, India • Contact: `pchauhanrajput.pc@gmail.com`
 
 ---
@@ -112,10 +112,10 @@ All research published across this desk strictly adheres to institutional risk s
 
 ## Quantitative Modeling & Engineering Stack
 
-- **Quantitative Research**: Python 3.11+ (Polars, DuckDB, NumPy, SciPy, Statsmodels, Scikit-Learn, Asyncio), SQL (DuckDB, PostgreSQL), Apache Parquet.
+- **AI-Augmented Quantitative Engineering**: Agentic LLM Architecture for Rapid Alpha Prototyping, Automated Pipeline Construction, Synthetic Scenario Generation, Code Verification, Mathematical Invariant Auditing.
+- **Core Languages & Data Systems**: Python 3.11+ (NumPy, SciPy, Polars), SQL (DuckDB, PostgreSQL), Apache Parquet, Git, Linux.
 - **Financial Engineering**: Black-Scholes-Merton Inversion, SVI (Stochastic Volatility Inspired), Spline Smoothing, Greeks Sensitivity (Delta, Gamma, Vega, Theta, Rho), Dealer GEX, Cointegration (Johansen/ADF), Ornstein-Uhlenbeck Process.
 - **Risk Governance & Attribution**: Parametric/Historical VaR, Conditional VaR (Expected Shortfall), Monte Carlo Stress Testing (1,000 paths), Bailey & Lopez de Prado Deflated Sharpe Ratio (DSR), Full-Sample RMS Sortino, Duration-Scaled Calmar, Maximum Drawdown Cones.
-- **Systems Architecture**: Python Asyncio, Memory-Mapped IPC (`mmap`), High-Throughput WebSockets, SQLite, Flask, ReportLab PDF Engine.
 - **Testing & Quality Assurance**: PyTest, Python Unittest, Pre-flight AST Syntax Checking, Regression Smoke Gates (112 atomic assertions).
 
 ---
