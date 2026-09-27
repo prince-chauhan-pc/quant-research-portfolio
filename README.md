@@ -18,7 +18,7 @@
 
 ## Author & Desk Mandate
 
-Developed and maintained by **Prince Chauhan** — Senior Quantitative Analyst & Researcher with **9+ years of institutional track record** designing, backtesting, and deploying systematic options volatility, statistical arbitrage, and microstructure-aware execution architectures across Indian (NSE/BSE) index and US (CBOE SPX/VIX) derivatives. Combines deep financial domain mastery with AI-augmented quantitative engineering to design, prototype, and rigorously audit production alpha and execution systems.
+Developed and maintained by **Prince Chauhan** — Senior Quantitative Researcher | Options, Volatility & Systematic Trading with **9+ years of institutional track record** designing, backtesting, and deploying systematic options volatility, statistical arbitrage, and microstructure-aware execution architectures across Indian (NSE/BSE) index and US (CBOE SPX/VIX) derivatives. Combines deep financial domain mastery with AI-augmented quantitative engineering to design, prototype, and rigorously audit production alpha and execution systems.
 
 - **Author Profile**: [github.com/prince-chauhan-pc](https://github.com/prince-chauhan-pc)
 - **Regulatory Standing**: SEBI Registered Research Analyst • NISM Series-XV Certified (Research Analyst).
