@@ -1,4 +1,4 @@
-# ⚡ Market Regime Classification & Volatility Allocation Engine
+# Market Regime Classification & Volatility Allocation Engine
 ## Institutional Research Note & Implementation
 **Author**: Prince Chauhan (SEBI Registered Research Analyst)
 
@@ -32,7 +32,7 @@ The unsupervised K-Means algorithm partitions the state space into 3 clusters:
 ### 3. Running the Showcase & Unit Tests
 
 Run the dedicated test suite:
-```powershell
+```bash
 python -m unittest research_showcases.regime_allocation.test_regime_classifier
 ```
 

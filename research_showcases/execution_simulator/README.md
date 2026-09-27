@@ -1,4 +1,4 @@
-# ⏱️ Execution Microstructure & Market-Crossing Cost Simulator
+# Execution Microstructure & Market-Crossing Cost Simulator
 ## Institutional Research Note & Implementation
 **Author**: Prince Chauhan (SEBI Registered Research Analyst)
 
@@ -39,7 +39,7 @@ Across a ₹10 Crore annualized notional turnover, a **1.8 bps saving represents
 ### 3. Running the Showcase & Unit Tests
 
 Run the dedicated test suite:
-```powershell
+```bash
 python -m unittest research_showcases.execution_simulator.test_microstructure
 ```
 

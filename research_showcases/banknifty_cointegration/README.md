@@ -1,4 +1,4 @@
-# 🏦 Bank Nifty Basket Cointegration & Statistical Arbitrage Engine
+# Bank Nifty Basket Cointegration & Statistical Arbitrage Engine
 ## Institutional Research Note & Implementation
 **Author**: Prince Chauhan (SEBI Registered Research Analyst)
 
@@ -42,7 +42,7 @@ If $\tau > 120$ bars, the spread reverts too slowly to overcome transaction cost
 ### 3. Running the Showcase & Unit Tests
 
 Run the dedicated test suite:
-```powershell
+```bash
 python -m unittest research_showcases.banknifty_cointegration.test_cointegration
 ```
 

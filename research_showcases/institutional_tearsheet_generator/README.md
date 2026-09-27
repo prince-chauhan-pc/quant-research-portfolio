@@ -1,11 +1,11 @@
-# 📊 Institutional Performance Tear Sheet & Heatmap Builder
+# Institutional Performance Tear Sheet & Heatmap Builder
 
 **Author**: Prince Chauhan Quant Desk (SEBI Registered Research Analyst)
 **Classification**: Systematic Performance Attribution & Visual Analytics
 
 ---
 
-## 🎯 Executive Overview
+## Executive Overview
 Institutional allocators and risk committees evaluate quantitative strategies not through terminal printouts, but via structured, publication-quality **Performance Tear Sheets**.
 
 This engine implements the core attribution logic used in institutional desks:
@@ -16,7 +16,7 @@ This engine implements the core attribution logic used in institutional desks:
 
 ---
 
-## 🔬 Mathematical Formulations
+## Mathematical Formulations
 
 ### 1. Annualized Sharpe Ratio
 $$\text{Sharpe} = \frac{\mu_{R} - R_f / 252}{\sigma_{R}} \times \sqrt{252}$$
@@ -31,7 +31,7 @@ $$\text{Calmar} = \frac{\text{CAGR (\%)}}{\text{Max Drawdown (\%)}}$$
 
 ---
 
-## 🧪 Unit Test Verification
+## Unit Test Verification
 ```bash
 python -m unittest research_showcases.institutional_tearsheet_generator.test_tearsheet_builder
 ```

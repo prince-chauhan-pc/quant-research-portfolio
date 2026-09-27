@@ -1,11 +1,11 @@
-# 🛡️ 11-Stage Quantitative Strategy Validator & Stress Auditor Gate
+# 11-Stage Quantitative Strategy Validator & Stress Auditor Gate
 
 **Author**: Prince Chauhan Quant Desk (SEBI Registered Research Analyst)
 **Classification**: Systematic Risk Governance & Anti-Overfitting Auditing
 
 ---
 
-## 🎯 Executive Overview
+## Executive Overview
 In quantitative investment management, the greatest risk is deploying an **overfitted, non-causal model** whose simulated returns evaporate when faced with real exchange friction, market closure deadlines, and sequence risk.
 
 This engine implements an **11-Stage Quantitative Gate** that every strategy must pass before capital allocation:
@@ -23,7 +23,7 @@ This engine implements an **11-Stage Quantitative Gate** that every strategy mus
 
 ---
 
-## 🔬 Mathematical Formulations
+## Mathematical Formulations
 
 ### 1. Turnover Friction Stress Testing
 $$\text{Net P\&L}_{2\times} = \sum_{i=1}^{N} \left[ \text{Net P\&L}_{1\times, i} - (P_{\text{entry}, i} + P_{\text{exit}, i}) \times \lambda \right]$$
@@ -36,7 +36,7 @@ $$\text{VaR}_{95}(\text{DD}) = \text{Quantile}_{0.95}\left( \{\text{DD}_{\max}^{
 
 ---
 
-## 🧪 Unit Test Verification
+## Unit Test Verification
 ```bash
 python -m unittest research_showcases.strategy_validator_gate.test_validator_gate
 ```

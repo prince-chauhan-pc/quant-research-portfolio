@@ -20,7 +20,7 @@ research_showcases/
 
 Run the unified 29-test quantitative verification suite locally:
 
-```powershell
+```bash
 python -m unittest discover research_showcases
 # Output: Ran 29 tests in 0.28s — OK
 ```
@@ -32,26 +32,49 @@ All 7 projects are **100% self-contained**, have zero live broker dependencies, 
 ## Quantitative Research Architecture
 
 ```mermaid
-graph TD
-    A["Market Data Ingestion<br/>NSE/BSE 1-Min Ticks & Options Chains"] --> B["Quantitative Feature Engine"]
-    B --> B1["SVI Volatility Surface & Dealer GEX"]
-    B --> B2["Johansen Cointegration & OU Half-Life"]
-    B --> B3["Parkinson RV & K-Means Regime Classifier"]
+flowchart TD
+    subgraph L1["Layer 1: Causal Market Ingestion"]
+        A1["High-Resolution 1-Min Bar Feeds<br/>(NSE Nifty / Bank Nifty / BSE Sensex)"]
+        A2["Chronological Tick Sequencer<br/>Point-in-Time Enforcement (t &le; T-1)"]
+        A1 --> A2
+    end
 
-    B1 --> C["Signal Generation & Dynamic Sizing<br/>floor(Available Capital / Margin per Lot)"]
-    B2 --> C
-    B3 --> C
+    subgraph L2["Layer 2: Volatility & Quantitative Modeling"]
+        B1["Arbitrage-Free SVI Surface<br/>Non-Linear Spline Calibration"]
+        B2["Dealer GEX Profiling<br/>Institutional Pin-Risk Mapping"]
+        B3["Johansen Cointegration<br/>Ornstein-Uhlenbeck Half-Life"]
+        B4["Parkinson High-Low Volatility<br/>K-Means Regime Classifier"]
+    end
 
-    C --> D["Institutional Risk Gate<br/>11-Stage Invariant Audit (Rules L1-L22)"]
-    D --> D1["Lookahead Clamping (t <= T-1)"]
-    D --> D2["2x Turnover Friction Stress"]
-    D --> D3["Monte Carlo Drawdown Cones (1,000 Paths)"]
+    subgraph L3["Layer 3: Signal Synthesis & Capital Allocation"]
+        C1["Alpha Signal Generator<br/>Z-Score & IV Skew Mispricing"]
+        C2["Direct Margin Sizing Engine<br/>floor(Available Capital / SPAN Margin)"]
+        C1 --> C2
+    end
 
-    D1 & D2 & D3 --> E["Microstructure Execution Simulator<br/>Passive Queue Priority & Sqrt Market Impact"]
+    subgraph L4["Layer 4: Institutional Risk Governance Gate"]
+        D1["Turnover Friction Deductor<br/>Strict 0.50% Premium Turnover"]
+        D2["11-Stage Production Invariant Gate<br/>Rules L1-L22 Boundary Audits"]
+        D3["Monte Carlo Stress Engine<br/>1,000-Path Drawdown & Ruin Cones"]
+        D1 --> D2 --> D3
+    end
 
-    E --> F["Institutional Deliverables Suite"]
-    F --> F1["3-Page CRO Tear Sheet PDF (Native ₹)"]
-    F --> F2["Canonical 11-Column Validation CSV"]
+    subgraph L5["Layer 5: Microstructure Execution Simulator"]
+        E1["Limit Order Book (LOB) Queue Priority"]
+        E2["Square-Root Market Impact & Crossing Cost"]
+        E1 --> E2
+    end
+
+    subgraph L6["Layer 6: Audited Verification & Deliverables"]
+        F1["3-Page Executive CRO Tear Sheet (PDF)"]
+        F2["Canonical 11-Column Validation Ledger (CSV)"]
+    end
+
+    A2 --> B1 & B2 & B3 & B4
+    B1 & B2 & B3 & B4 --> C1
+    C2 --> D1
+    D3 --> E1
+    E2 --> F1 & F2
 ```
 
 ---

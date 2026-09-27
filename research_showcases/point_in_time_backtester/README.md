@@ -1,4 +1,4 @@
-# 📊 Point-in-Time Vectorized Backtesting Engine
+# Point-in-Time Vectorized Backtesting Engine
 ## Institutional Research Note & Implementation
 **Author**: Prince Chauhan (SEBI Registered Research Analyst)
 
@@ -53,7 +53,7 @@ Date,Instrument,Strike,Expiry,Type,TradeType,EntryTime,ExitTime,EntryPrice,ExitP
 ### 4. Running the Showcase & Unit Tests
 
 Run the dedicated test suite:
-```powershell
+```bash
 python -m unittest research_showcases.point_in_time_backtester.test_backtester
 ```
 

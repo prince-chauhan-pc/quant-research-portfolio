@@ -1,4 +1,4 @@
-# 📈 Options Implied Volatility Surface & Greeks Engine
+# Options Implied Volatility Surface & Greeks Engine
 ## Institutional Research Note & Implementation
 **Author**: Prince Chauhan (SEBI Registered Research Analyst)
 
@@ -40,7 +40,7 @@ When aggregate Net GEX is positive, market-maker delta-hedging dampens realized 
 ### 3. Running the Showcase & Unit Tests
 
 Execute the unit test suite:
-```powershell
+```bash
 python -m unittest research_showcases.options_volatility_surface.test_surface_model
 ```
 
