@@ -139,7 +139,7 @@ All research published across this desk strictly adheres to institutional risk s
 - **Core Languages & Data Systems**: Python 3.11+ (NumPy, SciPy, Polars), SQL (DuckDB, PostgreSQL), Apache Parquet, Git, Linux.
 - **Financial Engineering**: Black-Scholes-Merton Inversion, SVI (Stochastic Volatility Inspired), Spline Smoothing, Greeks Sensitivity (Delta, Gamma, Vega, Theta, Rho), Dealer GEX, Cointegration (Johansen/ADF), Ornstein-Uhlenbeck Process.
 - **Risk Governance & Attribution**: Parametric/Historical VaR, Conditional VaR (Expected Shortfall), Monte Carlo Stress Testing (1,000 paths), Bailey & Lopez de Prado Deflated Sharpe Ratio (DSR), Full-Sample RMS Sortino, Duration-Scaled Calmar, Maximum Drawdown Cones.
-- **Testing & Quality Assurance**: PyTest, Python Unittest, Pre-flight AST Syntax Checking, Regression Smoke Gates (112 atomic assertions).
+- **Testing & Quality Assurance**: PyTest, Python Unittest, Pre-flight AST Syntax Checking, Regression Smoke Gates (127 atomic assertions, 6 Ecosystem Sentinel Gates).
 
 ---
 
