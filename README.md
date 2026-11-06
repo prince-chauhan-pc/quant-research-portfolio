@@ -40,6 +40,6 @@ The last command prints [`BENCHMARKS.md`](BENCHMARKS.md). Every number in that f
 ## Author
 
 Prince Chauhan, Senior Quantitative Researcher, New Delhi. SEBI Registered Research Analyst.
-[LinkedIn](https://www.linkedin.com/in/prince-chauhan-quant/) · [CV - Researcher (PDF)](docs/PC_CV/Prince%20Chauhan%20-%20Senior%20Quant%20Researcher.pdf) · [CV - Trader (PDF)](docs/PC_CV/Prince%20Chauhan%20-%20Senior%20Quant%20Trader.pdf) · pchauhanrajput.pc@gmail.com
+[LinkedIn](https://www.linkedin.com/in/prince-chauhan-quant/) · [CV (PDF)](docs/PC_CV/Prince%20Chauhan%20-%20Senior%20Quant%20Researcher%20and%20Trader.pdf) · pchauhanrajput.pc@gmail.com
 
 MIT licence.
