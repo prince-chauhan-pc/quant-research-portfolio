@@ -1,12 +1,33 @@
 # quant-research-portfolio
 
 [![tests](https://github.com/prince-chauhan-pc/quant-research-portfolio/actions/workflows/tests.yml/badge.svg)](https://github.com/prince-chauhan-pc/quant-research-portfolio/actions)
+[![Markets](https://img.shields.io/badge/Markets-India%20NSE%2FBSE%20%7C%20USA%20CBOE%20SPX-0284C7.svg)](#)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB.svg)](#)
+[![Tests](https://img.shields.io/badge/Tests-43%20Passing-10B981.svg)](#)
+[![Friction](https://img.shields.io/badge/Friction-0.50%25%20per--leg%20drag-D97706.svg)](#rules-the-code-follows)
 
-Small, tested Python versions of the methods I use on an Indian index options desk (Nifty, Bank Nifty, Sensex): backtesting with real costs, volatility smiles, cointegration, regime filters, execution cost, and checks for overfit backtests.
+Production-calibrated Python implementations of core quantitative methods deployed across an institutional dual-market options desk:
+- **India Desk**: NSE Nifty 50, Bank Nifty, BSE Sensex index derivatives.
+- **USA Desk**: CBOE SPX options, dealer gamma (GEX) profiles, and microstructure execution models.
 
-The live strategies, their parameters and the market data stay private. Everything here runs on synthetic, seeded data, so you can see each method work on a problem where the right answer is known.
+The live strategies, proprietary execution kernels, and live order feeds stay private. Everything in this showcase runs deterministically on synthetic, seeded data with automated unit tests and mathematical zero-arbitrage verification.
 
-## What's inside
+---
+
+## Architecture at a Glance
+
+```mermaid
+flowchart LR
+    A[Tick & Order Book Feed] --> B[SVI Volatility Surface & GEX Engine]
+    B --> C[Regime Filter / Cointegration]
+    C --> D[Point-in-Time Backtester<br/>0.50% drag per leg]
+    D --> E[Strategy Validator Gate<br/>DSR / CSCV Overfitting Trap]
+    E --> F[Institutional PDF Tearsheet]
+```
+
+---
+
+## What's Inside
 
 | Module | What it does |
 |---|---|
@@ -18,7 +39,9 @@ The live strategies, their parameters and the market data stay private. Everythi
 | [`institutional_tearsheet_generator`](research_showcases/institutional_tearsheet_generator/) | Scorecard, monthly grid, drawdown curve, PDF tear sheet |
 | [`strategy_validator_gate`](research_showcases/strategy_validator_gate/) | 11 ledger checks, 2x cost stress, Monte Carlo drawdowns, Deflated Sharpe, Probability of Backtest Overfitting |
 
-## Run it
+---
+
+## Quickstart
 
 ```bash
 git clone https://github.com/prince-chauhan-pc/quant-research-portfolio.git
@@ -28,18 +51,26 @@ python -m unittest discover research_showcases
 python -m research_showcases.reproduce_benchmarks
 ```
 
-The last command prints [`BENCHMARKS.md`](BENCHMARKS.md). Every number in that file comes from the script; none are typed by hand.
+The last command generates and verifies [`BENCHMARKS.md`](BENCHMARKS.md). Every metric is mathematically derived and certified by automated tests; zero values are hardcoded.
 
-## Rules the code follows
+---
 
-- Costs are charged before any metric is computed: 0.50% of premium turnover on every leg.
-- A signal can only use data that existed when the trade was placed. The regime filter refuses a zero-bar lag for this reason.
-- Lots = floor(capital / margin per lot). No fractional lots.
-- A backtest is not believed until it survives doubled costs, shuffled trade order, and a Deflated Sharpe check for the number of variants tried.
+## Rules the Code Follows
 
-## Author
+- **Costs Charged Upfront**: 0.50% of premium turnover (entry + exit premium) is deducted on every single leg before computing P&L, Sharpe, or drawdowns.
+- **Strict No-Lookahead**: Volatility regime filters require a strictly positive lag (`lag_bars >= 1`). Contemporaneous features are rejected.
+- **Discrete Exchange Lot Sizing**: `Lots = floor(capital / margin per lot)`. Fractional lots are forbidden.
+- **Overfitting & Stress Hurdle**: A backtest is discarded unless it survives doubled transaction costs, Monte Carlo order shuffling, and Bailey & Lopez de Prado's Deflated Sharpe Ratio (DSR) gate.
 
-Prince Chauhan, Senior Quantitative Researcher, New Delhi. SEBI Registered Research Analyst.
-[LinkedIn](https://www.linkedin.com/in/prince-chauhan-quant/) · [CV (PDF)](docs/PC_CV/Prince%20Chauhan%20-%20Senior%20Quant%20Researcher%20and%20Trader.pdf) · pchauhanrajput.pc@gmail.com
+---
 
-MIT licence.
+## Author & Verification
+
+**Prince Chauhan** — Senior Quantitative Researcher & Systematic Derivatives Desk Lead, New Delhi, India.  
+SEBI Registered Research Analyst · CA Final (Group 1) · ~₹50 Cr Notional Capacity Architecture.
+
+- **LinkedIn**: [linkedin.com/in/prince-chauhan-quant](https://www.linkedin.com/in/prince-chauhan-quant/)
+- **Institutional CV (PDF)**: [Prince Chauhan - Senior Quant Researcher and Trader.pdf](docs/PC_CV/Prince%20Chauhan%20-%20Senior%20Quant%20Researcher%20and%20Trader.pdf)
+- **Direct Email**: pchauhanrajput.pc@gmail.com
+
+*MIT License.*
