@@ -7,8 +7,8 @@
 [![Friction](https://img.shields.io/badge/Friction-0.50%25%20per--leg%20drag-D97706.svg)](#rules-the-code-follows)
 
 Production-calibrated Python implementations of core quantitative methods deployed across an institutional dual-market options desk:
-- **India Desk**: NSE Nifty 50, Bank Nifty, BSE Sensex index derivatives.
-- **USA Desk**: CBOE SPX options, dealer gamma (GEX) profiles, and microstructure execution models.
+- **India Desk**: **Indian Trading Desk: Quants Nerve** (NSE Nifty 50, Bank Nifty, BSE Sensex index derivatives).
+- **USA Desk**: **USA Desk: Quants Nervo** (CBOE SPX options, dealer gamma GEX profiles, and microstructure execution models).
 
 The live strategies, proprietary execution kernels, and live order feeds stay private. Everything in this showcase runs deterministically on synthetic, seeded data with automated unit tests and mathematical zero-arbitrage verification.
 
@@ -67,7 +67,7 @@ The last command generates and verifies [`BENCHMARKS.md`](BENCHMARKS.md). Every 
 ## Author & Verification
 
 **Prince Chauhan** — Senior Quantitative Researcher & Systematic Derivatives Desk Lead, New Delhi, India.  
-SEBI Registered Research Analyst · CA Final (Group 1) · ~₹50 Cr Notional Capacity Architecture.
+SEBI Registered Research Analyst · CA Final (Group 1) · ~₹100 Cr Notional Capacity Architecture.
 
 - **LinkedIn**: [linkedin.com/in/prince-chauhan-quant](https://www.linkedin.com/in/prince-chauhan-quant/)
 - **Institutional CV (PDF)**: [Prince Chauhan - Senior Quant Researcher and Trader.pdf](docs/PC_CV/Prince%20Chauhan%20-%20Senior%20Quant%20Researcher%20and%20Trader.pdf)
