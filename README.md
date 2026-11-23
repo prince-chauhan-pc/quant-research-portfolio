@@ -4,7 +4,7 @@
 
 Small, tested Python versions of research methods I use on Indian index options (Nifty, Bank Nifty, Sensex): backtesting with costs, volatility smiles, cointegration, regime filters, execution cost, and checks for overfit backtests.
 
-All data in this repo is synthetic and seeded, so each method can be checked on a problem where the right answer is known. Nothing here is a trading result. The live desk code, strategy parameters and market data stay private.
+All data in this repo is synthetic and seeded, so each method can be checked on a problem where the right answer is known. Nothing here is a trading result. The desk's production code, strategy parameters and market data stay private.
 
 ## What's inside
 
