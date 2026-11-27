@@ -39,7 +39,7 @@ The last command prints the numbers in [`BENCHMARKS.md`](BENCHMARKS.md). That fi
 
 ## Author
 
-Prince Chauhan, Senior Quantitative Researcher & Trader (Senior Quantitative Analyst, SMC Global Securities), New Delhi. SEBI Registered Research Analyst.
+Prince Chauhan, Senior Quantitative Researcher & Trader, SMC Global Securities, New Delhi. SEBI Registered Research Analyst.
 [CV (PDF)](docs/PC_CV/Prince%20Chauhan%20-%20Quant%20Researcher%20and%20Trader.pdf) · pchauhanrajput.pc@gmail.com
 
 MIT licence.
